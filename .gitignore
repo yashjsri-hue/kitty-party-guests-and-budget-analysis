@@ -1,0 +1,22 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.log
+
+# Tableau temporary and backup files
+*.tmp
+*.bak

@@ -1,0 +1,1610 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='e87b2a20917c7986f8bcb0941aaeb24d4f6a04dac230fea2d7f5b92f1ee5b760' _.fcp.WorkbookFingerprinting.true...creator-author-id='e87b2a20917c7986f8bcb0941aaeb24d4f6a04dac230fea2d7f5b92f1ee5b760' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='a40d00a886707bf09d00d09b63816d983cfad5b42cb638073a8f5183466091eb' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='a40d00a886707bf09d00d09b63816d983cfad5b42cb638073a8f5183466091eb' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='zomato_dataset_cleaned' inline='true' name='federated.1di7ysy18uebob1efc7u71rxo2ta' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='zomato_dataset_cleaned' name='textscan.1vluo950ow5aie1gh99ik031nquy'>
+            <connection class='textscan' directory='D:/Real_Life_Problems/Kitty_Party_Guests_and_Budget_for_Arrangements' filename='zomato_dataset_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1vluo950ow5aie1gh99ik031nquy' name='zomato_dataset_cleaned.csv' table='[zomato_dataset_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Restaurant Name' ordinal='0' />
+            <column datatype='real' name='Dining Rating' ordinal='1' />
+            <column datatype='real' name='Delivery Rating' ordinal='2' />
+            <column datatype='integer' name='Dining Votes' ordinal='3' />
+            <column datatype='integer' name='Delivery Votes' ordinal='4' />
+            <column datatype='string' name='Cuisine' ordinal='5' />
+            <column datatype='string' name='Place Name' ordinal='6' />
+            <column datatype='string' name='City' ordinal='7' />
+            <column datatype='string' name='Item Name' ordinal='8' />
+            <column datatype='string' name='Best Seller' ordinal='9' />
+            <column datatype='integer' name='Votes' ordinal='10' />
+            <column datatype='real' name='Prices' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Restaurant Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Restaurant Name]</local-name>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias>Restaurant Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dining Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dining Rating]</local-name>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias>Dining Rating</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delivery Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delivery Rating]</local-name>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias>Delivery Rating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dining Votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dining Votes]</local-name>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias>Dining Votes</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delivery Votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Delivery Votes]</local-name>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias>Delivery Votes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cuisine</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Cuisine]</local-name>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias>Cuisine</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Place Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Place Name]</local-name>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias>Place Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Item Name]</local-name>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias>Item Name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Best Seller</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Best Seller]</local-name>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias>Best Seller</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Votes]</local-name>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias>Votes</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prices</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Prices]</local-name>
+            <parent-name>[zomato_dataset_cleaned.csv]</parent-name>
+            <remote-alias>Prices</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Prices (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[Prices]' peg='0' size='50' />
+      </column>
+      <column datatype='real' name='[Prices]' role='measure' type='quantitative' />
+      <column caption='zomato_dataset_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='zomato_dataset_cleaned.csv' id='zomato_dataset_cleaned.csv_985341E565CE41E6A7D3793568C02D59'>
+            <properties context=''>
+              <relation connection='textscan.1vluo950ow5aie1gh99ik031nquy' name='zomato_dataset_cleaned.csv' table='[zomato_dataset_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Restaurant Name' ordinal='0' />
+                  <column datatype='real' name='Dining Rating' ordinal='1' />
+                  <column datatype='real' name='Delivery Rating' ordinal='2' />
+                  <column datatype='integer' name='Dining Votes' ordinal='3' />
+                  <column datatype='integer' name='Delivery Votes' ordinal='4' />
+                  <column datatype='string' name='Cuisine' ordinal='5' />
+                  <column datatype='string' name='Place Name' ordinal='6' />
+                  <column datatype='string' name='City' ordinal='7' />
+                  <column datatype='string' name='Item Name' ordinal='8' />
+                  <column datatype='string' name='Best Seller' ordinal='9' />
+                  <column datatype='integer' name='Votes' ordinal='10' />
+                  <column datatype='real' name='Prices' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Affordable Menu Items'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zomato_dataset_cleaned' name='federated.1di7ysy18uebob1efc7u71rxo2ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1di7ysy18uebob1efc7u71rxo2ta'>
+            <column datatype='string' name='[Item Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Prices]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Restaurant Name]' role='dimension' type='nominal' />
+            <column-instance column='[Prices]' derivation='Avg' name='[avg:Prices:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Item Name]' derivation='None' name='[none:Item Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Restaurant Name]' derivation='None' name='[none:Restaurant Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Prices:qk]' included-values='in-range'>
+            <min>0.94999999999999996</min>
+            <max>50.0</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Item Name:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Prices:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Prices:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Prices:qk]</rows>
+        <cols>([federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Restaurant Name:nk] / [federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Item Name:nk])</cols>
+      </table>
+      <simple-id uuid='{9FF877E8-54EC-409D-B45A-A60FBB2D8C3C}' />
+    </worksheet>
+    <worksheet name='Average Price by Cuisine'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zomato_dataset_cleaned' name='federated.1di7ysy18uebob1efc7u71rxo2ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1di7ysy18uebob1efc7u71rxo2ta'>
+            <column datatype='string' name='[Cuisine]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Prices]' role='measure' type='quantitative' />
+            <column-instance column='[Prices]' derivation='Avg' name='[avg:Prices:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cuisine]' derivation='None' name='[none:Cuisine:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Prices:qk]' included-values='in-range' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Cuisine:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Prices:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Prices:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Cuisine:nk]</rows>
+        <cols>[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Prices:qk]</cols>
+      </table>
+      <simple-id uuid='{10018D6C-EB3D-4D99-87E7-DAE59E4F10A1}' />
+    </worksheet>
+    <worksheet name='Dining vs Delivery Ratings'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zomato_dataset_cleaned' name='federated.1di7ysy18uebob1efc7u71rxo2ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1di7ysy18uebob1efc7u71rxo2ta'>
+            <column datatype='real' name='[Delivery Rating]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Dining Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Restaurant Name]' role='dimension' type='nominal' />
+            <column-instance column='[Delivery Rating]' derivation='Avg' name='[avg:Delivery Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dining Rating]' derivation='Avg' name='[avg:Dining Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Restaurant Name]' derivation='None' name='[none:Restaurant Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Restaurant Name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Dining Rating:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Dining Rating:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Delivery Rating:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Delivery Rating:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Dining Rating:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Delivery Rating:qk] + [federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Dining Rating:qk])</rows>
+        <cols>[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Restaurant Name:nk]</cols>
+      </table>
+      <simple-id uuid='{B5ED4BBE-022B-48FA-8F50-76B37690FFC7}' />
+    </worksheet>
+    <worksheet lock-quick-filters='true' name='KPI 1 - Total Restaurants'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Restaurants</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zomato_dataset_cleaned' name='federated.1di7ysy18uebob1efc7u71rxo2ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1di7ysy18uebob1efc7u71rxo2ta'>
+            <column datatype='string' name='[Restaurant Name]' role='dimension' type='nominal' />
+            <column-instance column='[Restaurant Name]' derivation='CountD' name='[ctd:Restaurant Name:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1di7ysy18uebob1efc7u71rxo2ta].[ctd:Restaurant Name:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='16'>&lt;</run>
+                <run fontsize='16'>[federated.1di7ysy18uebob1efc7u71rxo2ta].[ctd:Restaurant Name:qk]</run>
+                <run fontsize='16'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{556C22E4-3469-4EF2-9DC1-407FBF911025}' />
+    </worksheet>
+    <worksheet name='KPI 2 — Total Menu Items'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Menu Items</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zomato_dataset_cleaned' name='federated.1di7ysy18uebob1efc7u71rxo2ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1di7ysy18uebob1efc7u71rxo2ta'>
+            <column datatype='string' name='[Item Name]' role='dimension' type='nominal' />
+            <column-instance column='[Item Name]' derivation='CountD' name='[ctd:Item Name:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1di7ysy18uebob1efc7u71rxo2ta].[ctd:Item Name:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontsize='16'>&lt;</run>
+                <run fontalignment='0' fontsize='16'>[federated.1di7ysy18uebob1efc7u71rxo2ta].[ctd:Item Name:qk]</run>
+                <run fontalignment='0' fontsize='16'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FFEAF89D-BCCE-49F6-839C-17B2F56E65DF}' />
+    </worksheet>
+    <worksheet name='KPI 3 — Average Menu Price'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Menu Price</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zomato_dataset_cleaned' name='federated.1di7ysy18uebob1efc7u71rxo2ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1di7ysy18uebob1efc7u71rxo2ta'>
+            <column datatype='real' name='[Prices]' role='measure' type='quantitative' />
+            <column-instance column='[Prices]' derivation='Avg' name='[avg:Prices:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Prices:qk]' value='c&quot;₹ &quot;#,##0.00;&quot;₹ &quot;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Prices:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontname='Benton Sans Book' fontsize='16'>Æ </run>
+                <run fontalignment='0' fontsize='16'><![CDATA[<[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Prices:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1669DFE4-E18C-4277-BB3E-CA6225868413}' />
+    </worksheet>
+    <worksheet name='KPI 4 — Lowest Menu Price'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Lowest Menu Price</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zomato_dataset_cleaned' name='federated.1di7ysy18uebob1efc7u71rxo2ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1di7ysy18uebob1efc7u71rxo2ta'>
+            <column datatype='real' name='[Prices]' role='measure' type='quantitative' />
+            <column-instance column='[Prices]' derivation='Min' name='[min:Prices:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1di7ysy18uebob1efc7u71rxo2ta].[min:Prices:qk]' value='c&quot;₹ &quot;#,##0.00;&quot;₹ &quot;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1di7ysy18uebob1efc7u71rxo2ta].[min:Prices:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='16'> &lt;</run>
+                <run fontsize='16'>[federated.1di7ysy18uebob1efc7u71rxo2ta].[min:Prices:qk]</run>
+                <run fontsize='16'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1C8DBD15-8E5F-48D0-9F10-68F47168B7D3}' />
+    </worksheet>
+    <worksheet name='KPI 5 — Average Dining Rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Dining Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zomato_dataset_cleaned' name='federated.1di7ysy18uebob1efc7u71rxo2ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1di7ysy18uebob1efc7u71rxo2ta'>
+            <column datatype='real' name='[Dining Rating]' role='measure' type='quantitative' />
+            <column-instance column='[Dining Rating]' derivation='Avg' name='[avg:Dining Rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Dining Rating:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Dining Rating:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='16'> &lt;</run>
+                <run fontsize='16'>[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Dining Rating:qk]</run>
+                <run fontsize='16'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{25B9504C-08EF-49DC-9F20-25F483A6A246}' />
+    </worksheet>
+    <worksheet name='KPI 6 — Average Delivery Rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Delivery Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zomato_dataset_cleaned' name='federated.1di7ysy18uebob1efc7u71rxo2ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1di7ysy18uebob1efc7u71rxo2ta'>
+            <column datatype='real' name='[Delivery Rating]' role='measure' type='quantitative' />
+            <column-instance column='[Delivery Rating]' derivation='Avg' name='[avg:Delivery Rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Delivery Rating:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Delivery Rating:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='16'>&lt;</run>
+                <run fontsize='16'>[federated.1di7ysy18uebob1efc7u71rxo2ta].[avg:Delivery Rating:qk]</run>
+                <run fontsize='16'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3BEACE73-A36D-4FB9-9D21-00E6F1A541C7}' />
+    </worksheet>
+    <worksheet name='Restaurant Availability by City'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zomato_dataset_cleaned' name='federated.1di7ysy18uebob1efc7u71rxo2ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1di7ysy18uebob1efc7u71rxo2ta'>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Restaurant Name]' role='dimension' type='nominal' />
+            <column-instance column='[Restaurant Name]' derivation='CountD' name='[ctd:Restaurant Name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:City:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1di7ysy18uebob1efc7u71rxo2ta].[ctd:Restaurant Name:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:City:nk]</rows>
+        <cols>[federated.1di7ysy18uebob1efc7u71rxo2ta].[ctd:Restaurant Name:qk]</cols>
+      </table>
+      <simple-id uuid='{32E4EB8A-7CA5-4BAF-B495-DDCB6B982241}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Executive Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Executive Dashboard&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='900' maxwidth='1700' minheight='900' minwidth='1700' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='9' param='vert' type-v2='layout-flow' w='99058' x='471' y='889'>
+            <zone h='5000' id='14' param='vert' type-v2='layout-flow' w='99058' x='471' y='889'>
+              <zone h='5000' id='19' type-v2='text' w='99058' x='471' y='889'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>KITTY PARTY PLANNER</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book'>Restaurant Selection • Menu Prices • Ratings</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='18778' id='22' name='KPI 4 — Lowest Menu Price' w='8647' x='941' y='8000' />
+        <zone h='14778' id='23' name='KPI 3 — Average Menu Price' w='11294' x='11412' y='8000' />
+        <zone h='17667' id='24' name='KPI 6 — Average Delivery Rating' w='10000' x='26941' y='7889' />
+        <zone h='17222' id='25' name='KPI 5 — Average Dining Rating' w='8882' x='43941' y='8000' />
+        <zone h='17778' id='26' name='KPI 1 - Total Restaurants' w='11235' x='60176' y='8889' />
+        <zone h='17778' id='27' name='KPI 2 — Total Menu Items' w='12294' x='77647' y='8111' />
+        <zone h='21556' id='28' name='Average Price by Cuisine' w='43647' x='1529' y='29444' />
+        <zone h='24778' id='29' name='Restaurant Availability by City' w='43059' x='50000' y='29889' />
+        <zone h='28556' id='30' name='Affordable Menu Items' w='45235' x='1412' y='57667' />
+        <zone h='29889' id='31' name='Dining vs Delivery Ratings' w='43235' x='50882' y='57556' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Executive Dashboard&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2050' minheight='2050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='43' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='42' param='vert' type-v2='layout-flow' w='99058' x='471' y='889'>
+                <zone h='5000' id='19' type-v2='text' w='99058' x='471' y='889'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>KITTY PARTY PLANNER</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>Restaurant Selection • Menu Prices • Ratings</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='159' h='17667' id='24' is-fixed='true' name='KPI 6 — Average Delivery Rating' w='10000' x='26941' y='7889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='169' h='18778' id='22' is-fixed='true' name='KPI 4 — Lowest Menu Price' w='8647' x='941' y='8000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='133' h='14778' id='23' is-fixed='true' name='KPI 3 — Average Menu Price' w='11294' x='11412' y='8000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='155' h='17222' id='25' is-fixed='true' name='KPI 5 — Average Dining Rating' w='8882' x='43941' y='8000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='160' h='17778' id='27' is-fixed='true' name='KPI 2 — Total Menu Items' w='12294' x='77647' y='8111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='160' h='17778' id='26' is-fixed='true' name='KPI 1 - Total Restaurants' w='11235' x='60176' y='8889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='194' h='21556' id='28' is-fixed='true' name='Average Price by Cuisine' w='43647' x='1529' y='29444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='223' h='24778' id='29' is-fixed='true' name='Restaurant Availability by City' w='43059' x='50000' y='29889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='269' h='29889' id='31' is-fixed='true' name='Dining vs Delivery Ratings' w='43235' x='50882' y='57556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='257' h='28556' id='30' is-fixed='true' name='Affordable Menu Items' w='45235' x='1412' y='57667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{043F0D10-79DE-4B1E-96D6-5DC773F670DC}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' maximized='true' name='Executive Dashboard'>
+      <viewpoints>
+        <viewpoint name='Affordable Menu Items'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Price by Cuisine' />
+        <viewpoint name='Dining vs Delivery Ratings'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI 1 - Total Restaurants'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='KPI 2 — Total Menu Items' />
+        <viewpoint name='KPI 3 — Average Menu Price' />
+        <viewpoint name='KPI 4 — Lowest Menu Price' />
+        <viewpoint name='KPI 5 — Average Dining Rating'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='KPI 6 — Average Delivery Rating'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Restaurant Availability by City' />
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{1427794A-FFD2-472A-9D7B-575F3E42E01B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Affordable Menu Items'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Item Name:nk]</field>
+            <field>[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Restaurant Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6685E14E-E3F9-4751-BFDE-65903D348F4D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average Price by Cuisine'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Cuisine:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{705A6E93-EDCE-454D-A51C-5508AD7957E0}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Dining vs Delivery Ratings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Restaurant Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{54FEB10F-9461-4EA7-9B12-180B482BA8C7}' />
+    </window>
+    <window class='worksheet' hidden='true' name='KPI 1 - Total Restaurants'>
+      <cards>
+        <edge name='left'>
+          <strip size='170'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Restaurant Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{21C0A70B-2E63-41B2-88A6-9B4BCD6C88ED}' />
+    </window>
+    <window class='worksheet' hidden='true' name='KPI 2 — Total Menu Items'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Item Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C3389197-216B-4075-9360-8E9AD49C105D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='KPI 3 — Average Menu Price'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{143818F2-2B80-4005-8549-5903C91011FD}' />
+    </window>
+    <window class='worksheet' hidden='true' name='KPI 4 — Lowest Menu Price'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3F7D2C10-620C-4C2E-BE59-AFADA5DB5A6A}' />
+    </window>
+    <window class='worksheet' hidden='true' name='KPI 5 — Average Dining Rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6AF918A4-4953-48B4-8C81-C9701CF06599}' />
+    </window>
+    <window class='worksheet' hidden='true' name='KPI 6 — Average Delivery Rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{74C3DA89-24E0-4923-881F-115DBA7F3FE3}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Restaurant Availability by City'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:City:nk]</field>
+            <field>[federated.1di7ysy18uebob1efc7u71rxo2ta].[none:Restaurant Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C9DF32EB-2C63-47E8-989D-7EDB8C93D941}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Executive Dashboard' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nOy9eWwcV5rg+cvI+yLz4ineou7TsmTLLt8u2+UqV7nKruo6umcXmN0BprGD
+      RQ+wwAKN/aOAOdCYnT92Z7sxPTPd093TXVWuctnlQ5ZPHdYtkhJFkZJ4n8lkMg/mfUZGxP6R
+      zBRJkRIl66DE+AEEM168977ve+99Ee+IeKFRFEVBRWWdIjxoBVRUHiSqA6isa3RLA8YnJrBo
+      ZSTBSCyeYHJyAp3Zjl5MkCmAx1PPzr078U2M09Lawpmvv8DgbGL/7q0MDQ6yafNmus+fJKVY
+      aa21cWVwHFulk7raDTjNCoq1inxkit7+CR574imSkVmam1ugkGFwIkRLrRVfTMJGDlkroOgr
+      EdMRhEKavsFxtmzZzMDAEC2btrO5dcP9LzGVR4ob7gD/9Hd/yd/+9jNig+foGo5x+fgJKhvr
+      aayE45encJrS/Md//285c8ULwJFjxzn53n9jJBjlz//sf2c4lOXwl8eYufgZXdMFjp88wYYN
+      DRz6/a/4r//wDlazgdOH/4De7eEv/+qv+PCD9wG4dOwQf/Ff/wcJ72X+13/1f3Hyy884d/oo
+      /8e/+X84dPhTjr7/ByKyBn1mmo6hWf7mv/3n+1tSKo8kNzhAMJwikwghKWCxVVLrqaKlpZmW
+      lmY8tfW0bn8CWS7w0zeeAWB6bIDq3S8T7jxE++MH+MOHh4nOTvNBxzjfObgdT1UVzQ11/PiV
+      Pbg2PYVBAChw6uvT/OyP/1lZ7qcnu6iMjdAfSPPzt7/H3//THwD44cv7+N1nZwANZmsFFTYz
+      1y4cR2tXr/4q3xztL3/5y18uDHC43bx0YDuBrJHGpkaqHBZqGhvQA+gtNNa4MZiMNDU0AlBV
+      18Trr76EL5rjn/3Jn6DJRti+53G+++w+JEsVdpOWxoYGtFotZruHGrcd0PLt7/+IDS4blzuO
+      ce7qFM8++zx/8rM3mfLH2brrcR7f3khjWzvtu56krdrCpvYNnD19DrOjjmdefoNmj4nm5ub7
+      XmAqjxYadRpUZT1zQxfo9PGvOHrsFOISt/CPjpNZdbYZxkf9AFw4f4bT5y+Uz0xOjt4Qe3R8
+      HMQ0sbR401wHLnUSycn4hi4xGkzfNO7xrw5z9NQ5FAApRyyZW5XmnaePc+zoMVLzBSDG/UzO
+      ZYjF46tKr/JwccMs0OTkFDaTge7LDjIhP7pKJxpZINbfS7VUIB8KoLfpMEt1oA8zOjLC1u17
+      mBzow+RqRBDS5LMprl5N86d/+haB4AyNmx7j2uULTAcS6CwQD4fxz2WoqbISiuYZH+tDePJx
+      RqIC2kKSOpuOHn+e+gobzzy9j3d+82t+8vNfEEqEmensRhe+xJxDZpQEVYYcM6KTClueSqEJ
+      9GF27NjLzOwsek2Go18fo6XOSTisEM3EaKlxMx6IUGsX8CXg6YNPISS9HL00xQ9eeQbv5CQV
+      NhNXRybJT/eRFXNMaZrZ26DBN+TF4PJgltNERS1OnUxVy2Y2tTY+iLpTuQvccAdo2rgNs7Oa
+      9OwElZVmTEYrcd8IhspGqiokkqLA0NgQsUiSmRkf9qp6cvEIUspH/2ScvU/upyBm2bqxBZDY
+      sv1xZgavcW3Ki90A2QJMeL2YtRomIyke27mFmqaNNFdZ6R6YYN/+/fgmB6lu3UEuNgdAY1Nz
+      UVG9HSE7jdbsxjc+jsFWSWpuhtYdB4jN+co6Fe3YzI9/8TYmnZmNjR5GeofZfOBJMtNTYLUj
+      CyasuiwTE370Zit11R4A6po2ojU7MYlhtFKKRMFIS0sL0XgUV1UDophmxu+ntqYGh6uS0fGJ
+      +1RVKveCG8YAsVgcvVJAMRjo7Rti55Ymrg5Ps3dbM1OzEebCUdo2teIdGqCmZSMmvQ7yKaYD
+      EZxV9dRUVxCPxAkGgmzespnJkX5iop72egdXxmfZ1FyPThYZnJ5ja5OHa5NBtjZ6CCcy2J1V
+      DPf1sHPPTrKyASWTxOl2XtctHkMj5jFYrWRlgZHeS2zauhmdxUUmGcE7MkRNy0ZqPW5i8RiV
+      FZXEYnEqbUZiaZnR/h627D3A4KVONm7fxdXLveza/wQW/fXrQDwWw6xXCMWzBMNhmhub8c8G
+      qKl2IqBDlJMceudDsuYKvvPMY0hGJ22NtfevxlTuKuogWGVdoz4KobKuUR1AZV2jOoDKukZ1
+      AJV1jeoAKusa1QFU1jWqA6isa1QHUFnX3OAAyViYbOFBqPLNGBkeRl3Rgy8OHyavFsSKzE5P
+      EM9cf+jyBgcY6DrGTPL6sSxJyLJ800ylQoHSerKiyMjzB0eOfHUXVL41ci7KZ++/y5Xp5Z/Y
+      lKRCWaeFKLK8KHyhnYoiU5Cku6/sPSQXmSQaCdN1ZRo5nyaSKD6/Ozc3B4rE5YudeGfDgEwk
+      EmNiZBRREunr6WZgdAoAWczSfaGL0cniM1WB6XEu9Fx9ZC4uHedOcPJUZ/n4pl2g6cEe/vDp
+      V3z83m8ZD8b5+ONPkDNB/u1/+M+AwuHDn9J97gQnTp/jN797n3zCzz/86n2OfPkVwcAM586f
+      59ChL8nfY6Mud3Tw5r/43xjtPoeci/LJ5ycAhU8++YS+rtMcP3mWd975PaKS5b/8f/+Jd975
+      kFgsyJdHjvG7f/p7ZuJ5jn/+EV98dYS//tv/gZyP89vfvsepY5/RdWXsHmt/9+jo7OW1n/yC
+      4OhFBJ2WE8e+BkXk9JnznPjyM6pat9Jz6gjJQp6/+av/xHQ4iZhO4qhpJDLUwWAgw4d/eJ+6
+      pjbOnzlBPjbN6V4vbTVGvjjR9aDN+8bkIhOYavciZUIAfPzxRzd3gEuDU7z1xmu8+fbrXOm8
+      jAaJKz1XeebAZkbG+jFXbaJ/cBCtRkaTCjEnW7CbBBRBj8NTx969e3njjVcw3GPDLl7p59Lp
+      E1y+ehWN0YEixolPX6WyYSdX+gfRCwqGQpSZWAG7p4Gf/exNNPkcsiIjZ6L4wmnSkp7vvPoK
+      TbVuZocuk9baEAx2pidG7rH2d4+h0RFOfvEp/QMj5DVGjFqJ8b4uWvY8xUwgwFBvN1q9jlSm
+      wNa9B3n6id2EfJNcvtzN6MQkiVQOo81JbZWLSrud0NQo0WSC3sFpbEbtgzbvG3Pm61MEAxMM
+      9vXgjeWptuqXd4B4NEIkGmODw8SAN8RoXx9VLS1sq7NzajzBc089xjv/+CGP792Iy+lmy67H
+      ePb5F9BJIt968du0VYr0TUUpZLNks3lu3oH6Zsi5CDVt+3jjjTf4+Ut76PPG2NHg4B+/usaT
+      u5vxuFxs3L6Hbz33PE6zjsrKSgAudF7kwDPP07KhCoBsPMzF7ouMTPpw1jVSYbHy5IF97N6x
+      7R5qf/fIRSZo2PkCb7zxBv/LW8/Q0eflyZ2N/Pr4MDsbHWzZ2EpGlDFYrFgMOgShWPXBwCxG
+      sw2TqXiZsuokPjn8KcOTPmradyKkI+i0Giodrgdp3l0hqa3kFz96g3/9r/+U7nMd7H/qCVCW
+      EJ8LKF1dXUrXpT5FUWSlp/OMcrFvQFEURZHFjDI+NaMoiqKMj48Xwwp55ULHOeXq4JgiSwWl
+      u+OMcv5inyIripKIBJSTp84r4lIhd5FcKqrEUrniQSGrBMMxRZHzyvDwvH6SqHR3nVf6+kcU
+      WZGUUGiuGDWXVE58fVyZmJhQ4mlRyecyis83o/zhgw8URVEU3+SIcvZch5LI5O+h9vcaWSkU
+      CuWjgigqBUm6IVYymVBkufh7qP+q4p/xKb/67XvFHCRJyYv3sgbvF5ISDIbLR8FgUFEURVEf
+      h57nysVzeANRmrfuZmtL/YNW54GRiIYYHvOyZftOLMYbXhh85FAdQGVdoy6EqaxrbnAA//gA
+      5y/1l4+/+OgPJNf4wtjnhz4kMz9lPzsxyOkLV+4glwIfvPNP/O7d9xibDiw6Mz5wiWj2m+t5
+      r/nV3/1nfvfu7zl6qmOZs1k+/ewYyZCXYW/ovuu2FrjUcYJ3fvtbOnuK7TvqH7/RAaZHRrg6
+      Vpz7zkUmONfRS7IAmcQc5893ks5LZJMx/P4ZOrq6KSgQiUSA6//vN7HgOJ2XhgG4cGWYmfGi
+      gcPXLjM05p3XLczVyxeZnAki59PEkllKC0JFCkh6J3/047c4f+oYhWySRDrL6OgYntpmLIbi
+      ItGlixeZS6QRMwk6zp8nnr7Xqxyrx1hZxR/95Mc0m9N0DM4Q9o1x7Ouv6e0vbkUjyzImkwmd
+      Tsfg4CAAvrEhUgWZ86e/5ujR42QLCsMjI/RfOs/FixeYnC0uLpbiP8wMewP87Kc/xSVE+epM
+      DzaHZ/ku0JZaGwOzKTq6rnHwwA5A4fDnR9izexufHv6UmYEuTl/x0uZSONo1zJkzZwE4c/bM
+      /bSnjLV6E6ngMMhZBJ0FDdDfeYKUsYrEZA9D/iQf//5dHLUtnD99kvzcOF0DM0CeM2evL/DI
+      kkQmnUCUIDkzwF/+za/IomOg6yxzefjoww+oa2wmn0lz+PDn7Nqzm88/PfxAbL4ZG/ftYXZg
+      mDMXennx+ecZH+wrr+QWkgFGpiNMDPaTluDilQHig+fQ1uzg2Se2cOxEJxfOHCNt8LBvzw7O
+      n/qafNzHqO/R2Rdp466DpIPjJGcGlneAtj1PMN7TSRYtVh1ABr93lo7Oi5gsNgC27diFx+VE
+      zK+NK2ClXsOlrk427XsCgGHvDFHvEAlRSz6dwlPfSH21C4vZtGIefu8YPX39fP8HbwLwzEvf
+      YXvb9T1/dCY7NVVuaqs9zPq9dHZ0ojdZ7q1hd4D36jXcba0EfZOcOHECu7P6hrWYp5/Yzvmz
+      HegtHmKxOINXezh7cYhNGxuxuerZt30jaE24jBJHTl3iqaf2PRBb7glKAVkpLuwtPwgWjCiJ
+      UWw1m+YDLDTUO9DqDVTYK26IrpUynD17hr7BB7dHzv4DOzl08iobPcUG+dj2LQRjGdAacFUu
+      bqQGu4vxvk6+Pn6czILxTX1zOweffAKHregkgrB49dMi5Dl+8hTXhidpaqhHo9VTWWG/t4bd
+      BnImwaeHD3ElAE/taOCJx/eSlxSyoogWAZfLiWCw4rSZsFa3Exrq5rEn97P58WcwF+IocgEJ
+      cLmvL3o998JBBibDVBof/vmSfDLCF59/xru/e5d9Tz8H3NY0qIIoFtDp9WiWnlFkUukMNqv1
+      7mr8DZElCQXQam9cxs9mUmgNZvTa26vYgiiinS+Dgiii1enRLC2QRwaJ44c/pHrbM2xvrX7Q
+      ytwT1HUAlXXNw39fU1H5BqgO8AgxOnSNK1f7yeZvvnATC88+lC893QtucICLx/7AX/333/De
+      739HV9/iR4F7enrum2Iqt8+x48eQpTy//dWvyMxP+5Rf8olN8lXn4HyYVJ4WlWUJWV7+paBH
+      jd/8w3/hN795h3d+82v8seLK5g1POymyxHff+jmtDoWPPjpERzpMKuyjfvtBcvkcKAU+O3QI
+      wWDm6edf5ORXX6DTwtYDL9Dosd13o1SuU+muZteu3fhHBslJcK3jJLFUjpRspMUc5XznDC4z
+      EByl/ql6Pnrnb/HUtzLhneWf//GPeOfXv6NqQwNziRw/efP1B23OXUdvd/Pjt35M1n+NY1cn
+      2O4Wl+8CXTh3kk8/+Zite55kbKCXrQdfYUtzLcFgkOm+s1TteJ5XX3uNyOBZUnoXtRvqOHfy
+      1P225wYCgQBnz54t/2WzRS+XJIlTp05x5MgRpAWvOfb29iLLMul0mk8++YSuri6Wzgl0dXXx
+      ySefkE6nyeVyfPrpp/T29t5Xu1bL7NQo/+9/+HdY2vbi0INYEBELEv6ZaXbu3MneJ55h387N
+      KPNXeZurlpdfeoladwVx7zUa9r3Cyy+9hEX3aM6L5JMR3vvNP/Lu1wO8cGAzDrd7eQd4/OCz
+      vP69H7C5uRqbq4465/XpTbPNSjIeAxRMZjO2CgcNjW288tLT98uOFamsrGTz5s2k02kMBgNG
+      oxGAvr4+Nm7cyM6dOzl06BAAly9f5sMPP6RQKBAOh/n2t78NQEfH9edoTp06hdls5uWXXwbg
+      /fff59lnn8Xv9zM0NHSfrbs1NY1t/Ks/+zPGes4QSyfwzqZ56om96AQNGC1kIiFEcfmv8Niq
+      mxnqOk5XxzmiqZt/qedhxWBz8sO330IjJhDFAsdOnL3xI3kAdmcV5gWdI7fbXf7dsHEnwdGe
+      4rd69zxLdKIXv38WndWFq/LBrgP4fD46OzuJRCJcuHCB/fv3o9frqa2txW63c/nyZRwOBx6P
+      h7Nnz1JbW8umTZtwuVyMjY3R39/P7t27sdmKXbkTJ06g1WqZmpqivb2dvr4+9u3bR2NjIydP
+      nmT79u0P1N6lVHmqsFU42LGtnUg8T3WFwGQww5P7d2OpqMJQiDCXUWhpbcFutVDtdmOxWHC5
+      3VhtlWze1IbVZmd2NsjWLe0P2px7Qk3tBnZsbaf36hB1bsujtQ4wODjIX//1X/P973+fF154
+      Ac38ClUikeCdd97h7bffxuVy8Rd/8Re0tbXR29vLs88+y6uvvko+n+fUqVNUVFSwf/9+AH77
+      29/y05/+lGw2y0cffcTrr7/OkSNHsNvtJJNJ3nzzzQdp7t1FznP86HEyoszB517EaTU+aI3u
+      C8veAR5W3G43zc3NDA0NsWPHjvJ7r++99x5PPvkkkiShKAqvvPIKO3bsIB6P88orr9Df34/N
+      ZiOXyxGLxdBoNBiNRsLhMNlslkwmQy6Xw+l0smPHDi5fvsy3vvWt8p3ikUCjpaVtI5s2tWM2
+      PPpvgpV4pO4AJebm5hAEAYfDAcD4+DjhcBiAmpoaGhoaAAiFQrhcLjKZDB0dHbjdbnbt2sXs
+      7CxOpxODwUB3dzeSJLF//36CwSCXL19m69at5TxUHm4eSQdQUVkt6kqwyrpGdQCVdc0tRzsj
+      IyNcu3aNUChEW1sbTz/9NDqdjlgsxqeffkpLSwsHDx4sx79w4QLj4+Ns2LCBgwcP0tvby8TE
+      BBqNhhdffBGLZe29QKJy+3z88ccUCgXi8Th//Md/jE5XbEqHDh0il8uh0Wh46623GBkZobOz
+      E71ezw9+8AP0ev0D1nwxt7wDVFRU0NTUhNVqJRwOl6cWDx8+zFtvvUU4HCaZLO6mK4oio6Oj
+      vP322/h8PuLxOAMDA7zxxht873vfUxv/I8T3v/99fvSjH1FVVUU8XnxdMpfLIUkSb7/9Nna7
+      Hb/fT0dHBz/96U95++2311zjh1U4QCaTIRQKkclkqKysLDuAVqvFYDDQ2NjI1FRxZ2GNRoMo
+      ily8eLG8gKTT6Th37hzd3d0rrkKqPHyk02k6OjoYHBwsz7bp9Xr0ej3vvvsu8XiccDhMOp3m
+      888/55NPPim3k7XELR2gUCjw1Vdf8frrr/PSSy+V59ZLTw3GYjHs9uJrgTqdjj/6oz+ioqIC
+      m82Gy+Xihz/8IQcPHsRoNKpPkz5CWCwWnnjiCV566SWuXCluQyMIAt/97nf5yU9+gslkoqGh
+      AbPZzHe+8x2eeuopBgYGHrDWN7KqadBwOMz777/Pz372s3JjP3/+PD6fD1EU+clPfsIXX3zB
+      a6+9xsmTJ5FlmenpaX7+85/zwQcf4HA46O/v5xe/+EV5c1qVh5d8Ps97772H3W4nFovx4x//
+      mOPHj/Paa69x/PhxYrEYNpuNl19+mWvXrnHlyhVEUeQHP/gB1jX22uw3WgdIpVLo9XoMhusb
+      oBcKBZLJZLm7pCgKiUQCm81WvnuoqKwV1IUwlXWNeklWWdeoDqCyrlEdQGVdozqAyrpGdQCV
+      dY3qACrrGtUBVNY1qgOorGtUB1BZ16gOoLKuUR1AZV2jOoDKuuYRcIACkUjiQSuh8pBycweQ
+      c/z7P/8/mY7fww/hRcf583/zf/P7997j06OLN9jt6+nh1tvYJzl75vJNY8Rmx/jHX73DJ58c
+      Yjq45GuHhSQ9fcO3DlN5JLnpS/ETlzt445//Sy6d76TuuR109Pk4+Ph2zp47R0uNg97RGfIF
+      he+99gzHvzhKYC7Hd15/mnPnL5FKJHj1+z9k8sp5JmYTJDJ5/uiH3+GLw5+h1Qm07Xma1loH
+      oLDv6Zf48cuP89FHHzN0qZPZrIiitWEkhw7oOnWUuUyBzTsfZ2aoG1EWsHoaeXxn8SN+Q1d7
+      +FIXw7VhC7k5LweefZ6U9xo+atne6OT46W5+/oufoZv/lldHRydPPHGAjs4Onjiwl1wmyfTw
+      FXpGfNgq3Tx3cCe5TJLJKx10jkUxFuLsfuZ10r6rzETSKIKJl5598h5Xjcr94KZ3gK5BLxV6
+      gcDMGILRQdA3Qj7uIyEaOXWui7pqD3n/EJNxkb7+CX7y0zexW+zYTHqyoQkGpuOMTId5/Tuv
+      YjNoCA1dICjbqK7fQMepk2U5w9cuc+TLz3HXtxAPz4CtnmcP7CYYDIKcZCYKr77yKi01Bvqu
+      TuF0V9Hbff37vpu27+GV176Lb/wqW5odnOwa5HzPCO0NTgBkKDd+oJhv+b9MMBgmEo2CRsO2
+      rZvLYclokH3PvMq3D25naCJA18UePC4XQ9eucH2TdZWHmZXvAHKOXE4mEY/j1Mt4Y3k2VJr4
+      5Hg3L3/nuxwPjlC7oYH62jexmAXa2tsRNHD8qy/Y/cLrNFQohIBsKoWkyESiUQyWJuw2PQ0N
+      TTQ0tpZFtW/bzcsvPw7AhSNTtLe3XNdD0FMQi/v8Kxod9ooKGhoaqK3fsEhdRRYpSOBu3kP8
+      4ruYzE4M843eY9UyEUzQXGVf8H0AhULhejPesucJtioFfv27D/if/uRHyxaJyWKnoaGBN9+s
+      fRQGTyrcZHPcXCyEs3kHWzY2sam9kUA4xfZtzXhnk2xvb6Shzk1H5yUCwRCNLW3oBAG324mz
+      wsSZcxdI5Qq0tLaztamKr0+eI5kVeeJbLxLx9jPjDyAYK3A757+xqzNR5bz+vV27041hvoW5
+      3TUYlDQ9V66hMTpxWxXGpnyksjIbaqsAGBscZGxigieffRGLUc/cxDXq9jyPx17c4bh5Yzvd
+      Z04wOjKM2bUBKTHLtcFRKjx1NG2oBQTy8SCdPVeprmukqaEOEHC7nFgq3Zh1IBgstNdXcOna
+      CKFogrYmdW/QR4F7/krkpfMnmY2kMDtree7JvfdSFADRkI+z3UO8/srz91yWysOP+k6wyrpG
+      7cqqrGtUB1BZ16gOoLKuUR1AZV2jOoDKukZ1AJV1zZpzgDuZlV2radaqXneSZq3qdadpSqy5
+      72H6wwmO90zeVhpZlm974937kWat6nUnaR6EXtUOKy8/3nqLFCBJUvkLNbfLHTvA6OgorW0t
+      jI9NYa+wIsgFDNZKpsZGaW5tJR6LYnN4SEcDWBzVKLkE6ZxEQYZqp5VQPIu7wkQwmqbaYSEU
+      z1JX7SYQTfHOkb47VUvlEWJnazUvP95Kd3c3TqcTk8lEPB7HZrMxMjLCvn37sFqtdHZ20tzc
+      TH19/W3LuOMuUG2lgcGBEayeOubmZhgcnGR4ZBSj2YSpECUqWwn4p8nl8oyODOMPzBEIzpLP
+      JrnW38/sxChj037yuVz5OK0+YqmyDENDQ2i1WkwmEz6fj5qaGtxuN7Ozs+TzeUZHR+/480t3
+      7AAW9wbi8SjVdgNmcyVOl4262lq0KKTyMg67BYtZRyKexWK1Yq+owOFwYrZYcLtcVFbVUO2s
+      JJlKlY+N2jvVRuVRRZZl3njjDa5du1b+FNO1a9cwGAy0tLSQz+d566236O7uvqP819yzQPFU
+      lonZ+K0jLkCWJQTh9rznfqRZq3rdSZoHoZfVpKe1zkFPTw8ej4dEIsHc3By1tbUEAgE2bdqE
+      Tqejv7+f9vZ2PB7PbcmCB+AAJXGlj+0tZSYUVwfBazCN227k1Sc23ZaMQqFw24PT+5WmxD2d
+      BTp57AhPPP8y+XiYTEHAaTPS1dtPXbULvaClpq6WZDKDTqeQTBeoVQfBa5ZtTS5eOdDO+fPn
+      iUajaLVakskk9fX1hMNhHn/8caqqqvjggw84ePDgHQ1IHwT3bB0gHp5GZzAyPOpjejZEKh5j
+      fGqamioXSkHE7dAzMjDIRDhDIpEiHpu7V6qo3CU0Gg0ul6vc/3Y4HFRUVHDgwAGmp6eRZZmq
+      qiqmp6cftKqr5p7dAQoaM0996xnm5uYQhOIHsrPpBNGUSG1VFSaLAU+VgMFRTSrkRV57a3Iq
+      SygUCoRCIVwuF4qi4HQ6cTgcDA0NsXfvXmZnZxEE4aH6EuiaGwRLkoRWe3sDp7Xa11yret1J
+      mrWq152mKXFX7wCiKN44HyvnyYgCZuPNRaXTaSwWC2MzUf7u09v7oLaiKCsOqh9kmrWq163S
+      /Lt/8dJt5fUwc1cdwOebprm+ioRkQsomSScimE0Csbwdh11DaCaI1eVGycZR9FZsZiOZdAqL
+      1UpeFLFYLKSyefrGAndTLRWVFbn7He9cnHBKIhCYJJPT46y00ne5D6tdh97oIp+KkskpZFNx
+      QqFZ/JNjTMyGiYTDd10VFZVbcXe7QLk04ZyVXHgSq70aJZ8ikjTwraf2Ep3LUOmwAlqSsQiK
+      3opVV6Cq9jGiczGsloq7qYqKyqpYc4PgQqFw2/3Ztbp4tFb1upM0a1Wv1abRaDTLxllzj0Nr
+      NJrbngUC1myatarXnaRZq3rdaRpYgy/E3K73r+U0a1WvO0mzVvW60zQl1lwXSEXlfrLmukAA
+      4yODxONJNu58DKt+5fHA8GA/JpsToZAmlojjbthCdaVpxfgzU/3Esw6MQpx4PImzqppEIk6F
+      s4aGWvcyKSS6jp1h64vPMn21jwpPLbnE3E11yyRj+GaDCBqFSCyDraICKRMjj4E9O7ctq9dc
+      0E/AN425wk0aHU0eKwPDU9gqKti8sWXFNP5kAYucXp0tUo6RcS95CYRCZlW2APSe+RzP9meY
+      GRtZlS2lNFW7v01g6DINbe3MTo3eNM34yCA6oxWDViEUjVNhtxMIRm5q/8CC+liUdsW6XJ41
+      1wUCUAQdO9qqCSXEm8az221EQyFSBdi2fTOpcOSm8esaGxBkpZz/SCDF9m3byZnPQ8wAACAA
+      SURBVGdWevxay4b6WgBsdhvhUOiWupksFsRcjgojVLftQCcomKx27NaVHdNiNiEZ7DhdlZjI
+      EfSOldOuhM1mQ8kmVm+L1ohFr0FBWLUtM+ODiIKJqH9y1baU0qRSCay2CubmIrdMY7NXkI7N
+      4Y/n2L5tO6nAyK3tn7dhadqV63J51qQDGHUCA944tQ7DTeMpsgKCQIVFz0D/KM753aJXwuf1
+      EYnPYZjPf1eTk4GBAWyVKzxHLuUJxCIE/UEUWUEjCLfUzT85gcZgRmurIu4dQNAZkQsiYkFe
+      Ua+JSS9mo46CpCBLMkZnfTntSkSjUQSjrazPrWwp5NJkCqDXCau2paZpI5vamvFsaF21LaU0
+      dqMBjbY4qXGrNCgyChqqHVYGBgZwNu26pf0lG5amXbEuV0AdA6isa9bkHUBF5X6hOoDKukZ1
+      AJV1zZqcBlWBK+e+5tJshu8+9yQOm5lYRsQ7MU5T20YqrBaITfIf//ELnjqwj5YN1Xi9fvY+
+      vpOBgXHaGjxMz6WpqzTii2TZ2t5MOBzm7NmzADz11FO43aufKnyUUR1gjXJlZIy5aJ7pAQPn
+      YyKxZJaDe5o5eWmc731rOygSgk6PUYzwhyNTbHRq+eqInwNPPs9HH75DJCLSuq0RndHD1vbm
+      cr5q41+M6gBrEommtm087dAhOpuYOvwVP3jpMS5d7kHjaKdvYJydG0w89a0X2N9qQKgCIuOY
+      7EYuX+ln06bN5CQj7iorQ2P+cq6bN29WG/8S1GnQh4S5gJfuywM8/vRzOCx3tguayo2oDqCy
+      rlFngVTWNaoDqKxrVAdQWdeoDqCyrlEdQGVdozqAyrpGdQCVdY3qACrrGtUBVNY1qgOorGtU
+      B1BZ16gOoLKuUR1AZV2jOoDKukZ1AJV1jeoAKusa1QFU1jWqA6isa1QHUFnX3NQB/ONDXLgy
+      NH8k8+WhD+i5NsLYtR4+/PgL8qsQ0NHReUNYZ0fH4jidHTfEAfAOX6Grb3j+SOHw+38guwqZ
+      Swl5h4lmIZtKcrM9WlXWHzd1gO6rQ/hG+wHwjXYzOpujwiTwydGTtLU0IigyV3suMjLhAyAS
+      iRDye4ml8sTnAnRd6GZ6JoAk5ujpvsDo1AwAszNTdHV0MJfIABAMBgEYvnaZoTFvWf7EwATD
+      U0UHTPoHON81RBbIJOY4f76TdF4inYjgn/HReeEyklLUoaRLicDEAJEsfPn+rznV3Us4lrwh
+      D+/UBJf6Bgj4Jui5MljUa2aKC9095FWveWRZ2QHkHDJ66u06vLE8JqMRs9WGxWLBYDBQUWHj
+      3LHPMLgbCY9cYMAX54Pf/D0Xro4h5MN89OU52tuakGSFdDJOTWMbQx1HCGRgLjzH5m1b+fTQ
+      x2Vx/Z0nSBmrSEz2MORPlsObnEYmIjk6e8Z58rE2QOHw50fYs3sbnx7+lPHLZ7gwEqbenOBM
+      3zRnzhR3Pztz9swNJplMJuz2Cgw67Q15XJ3JkZrspncmR3K8B19K4djXp2lrrCGRzNy9EldZ
+      U6zoABOXO5gMzjEdinDubAcutwdPVS01NTW43C6amxuJZaC9oYr9+3YxMjpFVUM7r730LCn/
+      KNuefB6H043ZIOCbHONy9wUmJidI5cBTU0+FvQJHpbUsb9g7Q9Q7RELUkk+nyuHb9z9J/4UO
+      REGLUQOQwe+dpaPzIiaLrRhn5y7cLif5/M07ZS6Xhw1Nzdityg15bNq8GWelnbaNm3E6LORE
+      DZtaNnD2fAdz8dRN81V5eFnRAS5PRfmX//NP+cGPf4E+G1o2Tludg8+OfM0Hn59m3652BG0x
+      u6rmrXQf/YjTp06RyEoEZmcx22yYDMUNnUL+KU6fOEYeczmvx7ZvIRjLgNaAq9JyXYjOSj7Q
+      i6tx13yAhYZ6B1q9gQr7jd8W1koZzp49Q9/gxA3naurdnDpyBF8wd9M8iuSIJvI4KszMzARX
+      KiaVh5xvvDFWNp1C0Jsw6Bd/plIq5MkXwGwyAAqpZBqLzYoGQFEQJQm9bvHOjLIkobCaT14q
+      iGIBnV7P0i9bKYpMKp3BZrUumzKbzWIwGhE0rJhHWZ+CSDpXwGY1rxBD5WFH3RlOZV2jrgOo
+      rGtUB1BZ19x1B0in03c7SxWVe8ZddwBJku52lg8Fl7tO8+XxM0hLRlRiJk4kmVt1Ppl4mGSu
+      WIZdF7rIxYP4I6u7qPT29gKU05QWGJejkI5w6eoIE5OTq9btUUT9QMZdYnJ2DreQ5ULPFcIz
+      E9RUVzMTTlBrytAdNPHCjiqujvqp81RSY4WIaODaRJg97W5GpsJU27VMTs7iqoCIeTNvv/QY
+      feeOkU/uRnG0M3BpHFtVPd5rfWRkiYaWjWTCQezVGzi4fw8gkUgU1ysy4Ul6/UZ6z33BS88/
+      j2/GT31tDZPTk8g6E/UbNrG7RuTQl51s3+jBJBTo6OyhtbWZ0clxZJ2JuqpawsFZqje0sn/P
+      1gdbuPcQ1QHuEqloiKlEnm3yIBmM5ESQ4j6UikZaW5sYHelhajqIVqpGMWRI6Tzsf+YFhs98
+      hNcfwdrWSmu1HclixlHXCkDj1v1M9Z+lst1EKi0Szozi9NRTIefJzY3SMzDHvgoXAMHhPqo2
+      7irrY6n0sLGtjanhq2itdqYn/ex+bCvTaQup2WmocfKtp/Zy6KND1NpMZOYmmTQ42L27GGeu
+      9ygDc3oqXDUPpDzvF3d9GjSRSGC32+9mlg8F4XCYCoueaLrA5OgITS3NjI972bNvN/1XB3Ha
+      dKRkI9V2HdOzczQ0NGCyOwmM95MTrFQ5beiQMVitDA5PsGv7FiKRCJpCFoxWRkcnaG6uR0AH
+      FJ9NigR9aCxuWhtqOXP2DE8/9TQAhUyClGwkNDWIu66RocFh2lpbsNpM5CQtcj5HpVVHQtQT
+      Dc1QYdYzHYhQV1eP1Wooxwn6xrG4G2iofXQ/q3RPHKD0IJrH48FisTC5pJ+ZyWTK36oKh8OY
+      zWY8Hg+hUAiLxUI4HAagsbGRdDqNx+NhYGAAALP55otSHo+HdDqNxWIhFCquYFsslkWySpRk
+      ud1u0uk0mUwGs9lc1m/huYX6WSwWpqamaGxsLOcdCoXKEwClsJIOTU1NpNPpcvqSniX9gLLO
+      FouFdDpd1rV0vDB+Sc/SOQC9Xo9ery/HXVoGS+uiqampfG7pxEXJ/lIepfpYWCYlO5baHAqF
+      yGQy5bJJp9OL8i/ptjS8dG5qaqpcB6W6Wlp+S+txofyV6nlhOS8sy3vSBcpkig+PlQbEpeMS
+      C+8SiUSiHDeTyaDT6RaFlZ7vKYXdilIao9FYlqubX3FemkdJlt1uJ5PJlM+XwhaeW6if0Wgk
+      kUgsGvDn8/kb5C3UYWH6hWkWllkp73w+X9ZFp9Mtkr/QjtK50u+SDsuVwXJ1UZK/Uv0srY+F
+      ZWI0GhflUToulWNJ3sI6XFpHS+VKkrSoDpaeW6rPQhaW63L1XGJpWarrACrrGtUBVNY1qgOo
+      rGtUB1BZ19yTWSCfz0c6nUQQFMYmZmhq2IAgCGQTEbIaMzaTDovdiG86jKPCRlIU0Wut5LIZ
+      6qorSCWLCzrpeBKJLOMjU+x67DEAFI2BdCyIxWYln06RkzQIWg2FgoRFkElTgdFkJJccQaNz
+      ARri8SgY3TRWWUhG45hMOjKiQioxS219GyPjPlwOK05HJYpOg6agMD3pZ0NTLSaTFTGbYnxm
+      CpfVTSqeYlbSs6vZwcjwKDOz09Q4a6h0uTGadWh1BhQxSzon4g8E2Ni2kUAwRKOzQGVVGyPD
+      PizVG6gyxAjn7Mi5JHWtdUSn54jlErQ0txOLxdBpJGS0zAZmqDCbMTqqycRjGPUSBoOZdDxD
+      LJ7EVWkkXZAxmczMzvip2lDF1PAUZrsJk9VBhVlLTgTvxAjpVJ4t2zajKGCxmIjEI9R5XISj
+      KQS9BY1Wj5YUVrMdv38Kp9VO3ujAbijW7bh3mpaGDUyNTyDmRGpbalDyMhkJNLkssiLjcTvQ
+      6M14JwPsPrCVvp5RzFYLza212AwmZFkmGQkwMB7BZgGjwUBW0VNhUvDOTNO0oQWjxUounUJU
+      9BSQCHrHcNkqqHQ6mAiEaKiuQqcViKYyVJggnlbIx+NIZhOyolDjqCQRjaHV6hClHIrBTi4V
+      x2Y0oNXCdCRIa2M7Yj6F9pe//OUv76YDlGYw9EIB36gXa60DTUECo4EKU4aMqEOv1TI+Os5s
+      yE9NVQ3hcJKe019Q4XRy9doQdbXVAJw4eoRMXuJidzeP7dsHgBidJprKk0plEfN5smIeWZDJ
+      ZXJkRYlz58+STUe51j+Jx+NCLojMzPhJxULU19cTmguTyuTI53P4ZoLU19czNjKIyWTEbrfj
+      9/qw2+0MDQ9QX1/P+fPnkIFLFy/hcjuZ9k/jHbnK5s2bOXPmNGNj48z6fRjMRoxGI2I+y/jU
+      DMlEFK/Xi8vl5PPPPiWTzIDRxuzsDKKY5L0PP6HSXUVgZhKvz4dGAz6vn/NnT5JKpqmvq8Ef
+      iDMzPYG1wsbXR7/C7aggm8lhs9sJhkP4/V60BhNSocD4+CjpTBq9zsiVq33otFoGr13B6XQh
+      ijmu9Q8wPDpMS2sLYkHk3d//HqvFxsxMAJPJhJjPks8kyWXz2O12BgZG0BqMTI4NUVdXB8DI
+      0BD19fUMj4wwPjHB+Og42bxILBJhxDvG9KQXR20TVpORk6dOcOSLz0nEIohSAb93ilA4wLGj
+      R+i9MoDVrkWj0ZLL5hHzGTLpNH09fbS3t+Od8mG3WQn6veRTCY5+fYRkKofRbGLWN01dXR0z
+      AT+5dIpkMkNezDI1PU08MkciHqeutpa5uTmy+TyiWGByfJR4LEp4bg6t3siVK1exWyykU5l7
+      1QWSyeQ1iPZKxi9dIZHXUcgVSGcKaChOj6UEI0br/KVFARQFBC06wbogFwHQodddf0Emmp1X
+      WSMgzt+7pJyEZj4bo0ZCoym+4qIoIGkWv1yjATRFgctqrlnh7RjNohOLI+VlCY2mqJesAEoB
+      jXZB0QoQz4NBo0GDhkwuh05vRKsv7nGhN+vn9S3ML3QV0ypyBtCB0QaKglYjFPMvnkUp2wKC
+      pqSXgkajQVGKFi7Ue6lpi0y6oSOgzOuwILwoBM28HAXQCBo0Gj35jFi8E6cT83kr6LUajHot
+      Gq0GWZIoFHRU11ej1UIhVczHZCrqqhEU9NriAp+glDYhEFDQUKUX0OoVFKX4ByAXZFDAqAHB
+      KBS1FQQE/bxRGgGNUIxbqgsFoVgIslAut3vWBQKoq6ubv5oMLKqIRCJBbV0tgkbA5/MhG624
+      pBhRrZPqCiOBYHGRorWtjXQ6zYb6ei5evDifWoPVagEUYnNxHK5KZEUhEkziqrahFcBktpUX
+      gZR0GIu7AY1GQyAQwGwyIcy/cWYyWwiHglRXV5NMJkmn05g1OTKKEUdlBdFYHFkwYDXp2FBf
+      j8/nJZMp0NLSwNjYODqDkfa2NnQ6LcHALMlUGg1gMJnRoJBMJtBqtZhtFViNBkJzcxgNWoxG
+      K/X1tXinptDqdMgKpJJJbDYrFouVRCJBMBjEarVhtRYXk6o8HoKhICiQTKXQarUUZLCajQiC
+      lmQqiV7JorW6qfF4yGazJBNzZLIFZK2JpupKhsfGcLncSJJC28ZWpsZHiWcVbCY9KDKxuSg2
+      RwWZTIaamhqCoVlc7mpCgUCxAUkFNFodNdUeItEIgmAlJ0t4Ki3YLCZ8wSgCEpl0Gq3BzJb2
+      VvJ5kUQyjiIryIpCS3MzsViUaDRONptBVpSi82k0SLKWbDqG1WollUphs9nQzLeDZDKF3z+D
+      3V7B7Kwfq9WKkg6T1Vgwmy3YbDYEAQpigWAohM1mJC/r0Gs0WC0W0CgEEgWUQpaNjXXMzs6i
+      0WhWXghb7cLTUtLpNIVCASguOmg0mmWfEBXzYvm3VZCxV7eSC4WQZEM5vCCKFESRVOr6S+lm
+      c7EfCWB32JHmfzs8VmRZweUqrjRKklSUa3SU4wOg0Vw/nr/SSJJUvrJgckAmg1ZXvCpXOe2k
+      02lyuRyKosHlqqRQKNpTV1ONosiIokxBksv5lq4u1dU1hEIhPE4H6XQaRZYRBBOimCeVSiPJ
+      CtJ8OUiShCgWEEWxnI8sS2U7CpKEJF23w2Aw4JhfaZWkAm6Xq1z+sixRKIi43DXzK54KiqBj
+      16495ZXgglhAb7TgNl5fzbU5rr8fXSgUMBrMKAvqzlNdQzgcpiAp1NTUL5AnU5Ch2u0or7DW
+      13iQJIlcLktBLJTzSCQSZLO5eR2vhwNUeZxMpWNl+0vtJpfLIYp5FEWhUBDny0YGkxPjfDmV
+      wktIkoAWGVkBSS7m47YIpNMsKuMVxwBGo/GO/hRFIZVKIQgCBrMNt8vBlG8WXzhJLJUnlspj
+      NQpcHI2i1WrRUWAmkuVY7yx6jUS/N06VveiXV31ZJElick7ERHHlbiaSxV1pRRAEBEFg3B8j
+      lsqXw7rHYjTXVHC0Z5oGt5lxf4ycJGA2Gchl05jN5nKanCSgo4A3IhJNpLEaBWYiWaxGgUgG
+      dBSIZMBu1hHNajAIMmevzTIWSOGxXL/DGY1Groz4CEYSuCutyBod/rk0oqLF6w/jTwrIsozX
+      H6bfG2dTowePx8OVER+XR4NsavQwOBmk3xtn16YGhqZC5XLJSQIaZNKSDq8/XC4/s9lMIqdg
+      1GkQBIGz12aZDCQQRZGa6iom/BE+vzCJXiMRS+UZD+XZs6WJC1dGcVdauTaT48qIr5ymVH7j
+      /li5fkRRLJcRwMXRKFV2Hd6ISFtjDScuexn2hpkMJNi1qYF/+LyXLRsqyOfz1NXVkS4I+MMJ
+      JvxRKmxmzl7xcWBXO191jTLsDZfllupDo7cg51PlOpiJZIml8uzYspGvukZJpVJsqHGTSCSY
+      iWQxGvQUZAVfOEm/N85kIFFuU6V6dldaGfEnqa+qZDKQwG7W4XK56B3yFm1ervEvJR/zcam7
+      m998+OVqopcZm4mW/6eyYvkPIBBNlX+nsmI5TiB6/WpfirMwrJRm4fHCsFLc81enF50v6bJc
+      WN9YYJEuy/3vGwuU8y/lvZIeS+0t2bHQlmQmTyCaKh8vPLdQdknPko4LbT16cYzZSKqsV0lO
+      Sf5CPQLRFEcujC0q/4VplpbvQp2Xlu3Csij99Y4GFpVxSb9UVqRvrHiulH6p3KVtY2n4Qn0W
+      6jk2E13UblaypaTvcudWPQi+0DvK5mbPaqOXK+bcVe+KcQKRm++3Uzq/NN7sCulmIykCkdRN
+      ZS7KP7qy/KWyl1buSvGXO17OzneO9JXz7B0NlMNHfRHGZiI3xF/q+DfLe6XwoxfHyr/7FsiE
+      YtmtVK4rsVBGqZHdilIdLcc7R/pumX61dbtQ3kK5swvax2wktToHkGQZkiniS/ry8fAMoVgG
+      78QoM4HwonOraTg3a4AL81iucS1XWYF5I2/VWFfDwqvVcjqsFH+54+XSLtRxYeNZetW9U5Yr
+      25s12MBNGuaKMpaJP+q70Xm/qZyF3G7dLmxDgeji9hFYrQNodQaMJpgLxa8HyiKBwAxzkQh5
+      yUQmWRy8yLJMMlN8+k+R5cUD0Dsglc2Tyt6441sgkirLAVhuMqsUtjCPO5n0KqVZKA+Kg7RC
+      oUA8lV0UtyQrmcmV5Zd+Q3EAt5xNUCyz5WQv1ftmti93JVUUpewUt1MGK+mZSC/epvh6WV8f
+      1MuyXLanlM/sXHJRuqVluhyFQoHUKuItlLPUxoV2LDy3KgcQk2F2vvgGtVZ9OSwaCqE1GEmk
+      0kiSiCRJ5YFpycM0gkAo9s321Sz181Y6V0KzzAR+KWxhHsvFuxUL81mIVqtFp9MxMRtfFLcU
+      b9wfK6cr/QYWldFSxmdji45LspfqvTD9aq6K6QV3ldspg5XyPta9eOe9pXlOzMY53j2BRhAW
+      5XOse3xV+S9Ep9Ot+sq/cNy5kpzxBb9X5QDWmo3MDXchmK5Pkzmq62ht3cy2jc24HEaq5qfF
+      lrKw3/mostJVciVu1te+k+7PatLcjW7h7chcOnlxv7mZfgvPrcoBRgeuMhdPMBddfHVC0GMx
+      6XFX1eKoWH4rwvtF7+jqBmF3wq1u07fbuO7korB00PqgWarPSl2U1Q6Ob8a9rNtVOUBDXRUZ
+      ycDu7ZvvmSJrmVs18KMX7t5dbq019NVyt+8w94tVOcDExCRiPksydXubXn2T0f7dYLkZiVvN
+      UtwJK93qxxbIGrtDuctNiX5T7kUZrMRSu+/EnnvZjV6VA4zMxKmvsrNtU9ttZX4vKu92WK4f
+      eDemGO9E/p3KvRf6PqgyuFPZ529z7v92WJUD7N29nW1btzHl899W5g/rbfF2+M2SKcf7eXVd
+      y9zNq/a9dNhV7QpRW98IgG/GVw4r5FKMT/kxWe1kYkG05kramhvujZZrmKWDv/t5dV3LPOju
+      72pZ1R1ALuSYmJggHAqTm/9gnM5oxW7RgyaDzliFIIvlhbD1giRJyz4XpPLwsCoHyAZHOH9l
+      iosXL/Lll0cASAWnGJgKYzJWkIjNkMzkywth6wWtVvtA57pVvjmr6gKZXE3YNeM073qcOndx
+      Mcxa1chzVcWukauy8o5WWB927uX8tMr9YXWXa42AyaDn6rVrNDU33ZiJIKxLB/j49MCDVkHl
+      G7LKMUCenAQvvvDcvdbnoUId8D78rMoBui5cIDE7Skff6LLnl3scWkXlYWB1j0Nrtei0WrTC
+      cp8vzZYfh1ZRedhY1SD4wNMvcODpFxDF5W75ApIkAuvz00gqDze3tT26Xq9fJtSAy2FEa1z9
+      65IqKmuFFfcF+ibbolwdKr4s4YsVSGRlttQYFsWxmwR80eJOA/UOHYmsjC9WoL6y+LveUfTL
+      gdk8dqOAL1Zgf7OpqFf25gttvlgBu1EgkZOpr9QtSlOSVbZxXpYvWsBuErCbBBJZuazfwnML
+      9UvkijYNzOav512pw24SFskr6TAwm8duEsrpS3qW9CuVSSlvu1Eo61rWZ0H8ctz5cwtlluIu
+      LYOldTEwm1+U33L1U5JTqo+FZZLIzcszCmVbF5ZDqWzsJqEcp1w/82FL5fpiBbbUGMrpSjYt
+      Lb+l9bjQ/pXqeZFtC8rynmyM5fUWH16qrq7GaDQyNTW1KE4qlcJdVY1WA4FAAKPRgMfpZC6e
+      xGw0MDf/hZnaDRvIZkWcFVbGxorPlpgt1tIGZWXkQgFh/iMIVqsNWVGw26wEAgEyuQIeVyXZ
+      ZJJ4Oo3VaiIvaTFoJaxWO4FAEIfbjZjNkkql0AsCoizjsNuJJhI47FZSqQzO+gZSkTBWqxWd
+      BnyzAZqbGrHaK9FIOSZmwiiF4n43FouVbDxOdUMDgUCAxsZGcrkcgUAADWCxWqmuriYQCCwq
+      E70gYJj/skkgEMBqtWI2GUglE9TUNxLwz6ARIJXKYrVayxtIAeUNv1KpFNXV1aRSKaxWE4H5
+      yYmq6mo08/kCtLa2EggEyEuQioQwmM3zO80VdXG5XGSyObR6HclYbL5si/JcTif2SgeCBoJz
+      McwGLWazGUVRCAVmyOQKVFqt1Da1kk4lyGUz5CUFQRaLH0YRdMxFYhSycQSdsVwG1dXVjI2N
+      YjKayOZymI1GCqLI5u3bSadS82VStMlsNCLoNIB2XjcLsiQjaLUEAgFMBi2SDAajadFmaLF4
+      grq6WoLz5fD/13YnXZJb+X2GX8xjIMbMyMipWEU2u4tssbWQ1LaPjxfe+PPan8FH8pFatNhi
+      VRcrq3LOjDkwDxfABbxItnV6z8YWGyxw5/t/fr+4DZokKevHNUrX0FYZ5mBKmacoiiTPcu7u
+      bqgqQZ5m9KpGJ1u6Dpqupe01DLWlEg3Qsdm9QLZ911FkMfe39+iGQV0LOhSaVtLJFvoG0ao0
+      okS3bERZY9omhzDFtnSKLMexLEohaJsWU+0QoqFoFHrZkKUpVZ6i6Qaye6EVW3Q62dCiYBoG
+      hq7QlBlJmnP97p8xvDFt22C5Q4KBR1mWRNs1ba8R7w5Yno8iS+K8ocpyFFV5gaC6BlG3OM4A
+      KUvqIibKWzo06k7iuzalEIiqohYVvaw4hAl5UWFqClESoWkGbdNStxJZVcT7Nfe3t6x3WyxT
+      Jy07XLOhKHuSaEdeNYgip6oFUZzR0SE7hU7RMPUOUWQcMoFaJ6x2CW2Z8XAoKKMMWynplJ97
+      y5+Rs74uuI8qphaUsuXppyviNMe0bQ7bHdrPUU3+8AiUHpEmCNVEkZLpOEAqGsl2SdmIF0hN
+      StqmpcoL1usnLEMHRUN23cu7MsMcTCiKjJ4WUdWoSkey3xEmGYqq0XY9ZRxSipKuh12c4A2G
+      NEJQiI5e9mCCKCtEWaJqPeKvYYM2HVRpSlmVpJWgaf9j+GmlpGtrZA+yeqkV7juJpnYUlcRS
+      JeEhoqsLlss1XZ2SRyWm51FWDcez8Yt7+fNulGxK6rqmkZK6KoiiiLvbJzTlpfC5a2vuH5f0
+      fU8SHuj7jq5vyUWHqDKKn3tPQ1Epqpei9ap4udwmihzoKdOIuiz5/xtmqsHJ6Qm7TBBGjzSt
+      pKlePBrP92mahtbQadoO2Qj6rvkLn9T1/iOv6i+fnirLX+KF6pdvaRtBkSXUUkFRVRStJ8tf
+      NiKSquPPfqdlWgxGQwylRyoKsq5/tj4luygmzQR5lqD2oKovOqr6888sZI+UoIgSS+2J0xzP
+      9ynDLVW44uHp5a5T13Xsfs4dLpM9QiSkaYpr2dieS1q3+EMfWSa0tcAbDgn3G/oeyiylETWa
+      1nJz94CUNbWQ1L1Ollf8DO3RtgLXHZAXKULUtFKiWdZfKK5/VvnknwE2OtarNaXoKEVLJV6m
+      1pam0VYv9Su6aQA9dV5SC0nPi0zY9/0vPwVar9f88fs/UGYFizeviQ8hiqJwOOzY73ZosqTE
+      ZTYOKOItmB4nJydU8YrJZEEwHfNP3//AFydzMmkwUjuWRclAk3RNi1CHLGY2lWjZ73e8uZwT
+      ZyXpfk9hz5n6Br/+8pKbq/dsS4Wpa5JkOUm8Zzg9ZmT2VNLD8TQcx+Sw3trxbQAADhBJREFU
+      3SJVjyx8wh1MeH564D///h94enii6SXJfs+bt39DLTscVdJgsP70bzSDM768vMQywUCh6i2K
+      aE0e7yhxmQzAHc+xFANpmvhax+EQ0nQ9g8GQo/kJ6X5Ji06Rxlx9+Inp4gRVtajykMFwRLzf
+      EIyPaIqU1vQwEaioDIYzyg6q5IBjWVRVycDq0YITXMdE1yz22zWZKBmoOl4wotdMPE/h//zj
+      93z97Tc0oqQ8RLx7XPHN5YxDXPL6q9fs9jGeY6KoLrerJ6y2QGkyOndOU2cEtoXhjxmPJwx9
+      i/iw4uZ2y+nrV+RRTBFvmc7PMCyHV796y9PDE1YTcb2KUNWWwWwEcYkzCHB9j/3hQBAEZGFM
+      fFjSaib5Ycnxxa8x+5Y+mPHNl0fsdxVFHPK0WmJ6A/Qmx3J8RJrijIcYKLQojEcBd7d3yK7F
+      8Ca4ho7rOcS7JUkmOBlP0KYTdo/PeL7+y4fkaVrP5vYTxvwNH+9u0eoaXVG4vv6ApZkE/oiv
+      Zh7XD3ssX2O33aCbI3CmNOtH/vf3P/L2zTmDIODxhz8SfP0dQ9nQtT1FrxI/vGe71Bn5HsvV
+      BlXracI9T6Xgcm6zLQSNpjMxLKZIZA9d1UAnOez2GEfHRKsbvKHP1WrH4vVXlOEdZZKABNUO
+      +PindzwfEqbTGVIxKZqCu/c/sLh8Q7SOGc9POWQ16/Uj3/39f8XpMv7l+z9y+7jG0xQGC5s0
+      kSjGhk2kkLU9M1sgy5Sj8y9YPt6S9zZX//6vXE48oqJFaD5K17E97AjXDwwGY2RbkyUb5OR3
+      hNc/ElQVueyZzRaYVkssek4GBpmQfIwqzkYh7szn09Uzf/O33yGie7JEwRvo1K3Kx7jgzHGw
+      +4K7OEMTNQtfQ++hbVJubp/ZblZcLGYcwpyBY2DZJptSpz2EnM09ikZi9g2rOGZ//8RwdopB
+      Qx6nSMMgXq5IpY46nNN+focmFaI4Q7F9LqYeimHR9HtW97fEjaRoesbU1IpKU8aY7ggrOOX+
+      7jOv5hPqWOd//q9/wvBOOZ8NUJWWP326YWRIDG+CTCKmQFmV9L1KuL6h0XwO2zWqFrO4eM12
+      85nRyCcK76nLhn65YjiZsXx8/musATLWYQR5yHAy58jT+OnqkdFogKoPsQIb0/aRqoJtWXie
+      z6uTAYph0DcC2+zRdJ+6rgj3EZo1Zr97ZBunnM+GmKaDO5xQJAm/+e1vGTgOHQpDx8IMJow9
+      C0PXMG2buigwFDh7dUKYZKRZhKWbMDzm9GiI55o0oqbXdYoG3v76Kz5/vubk7Bxd6XFsCyEq
+      xrMFimZycXaG4o/p4iVx1aF2Dbu04s2rS2yl4f7qivHERXem6JbC7eOO0+mUx/jA3/7df2K/
+      j1F1k+PjGS06di+wggmyylG8gO0uxHIcLk4vcB0NS1dwpxdMrRZD1dBMBcOdcH42Q5EFrjPE
+      n1/QJBtEa+D4HtPplCgpOJ3PEIVEN3UECqgG08mU2XBC2Zmczmfk6yfM8YKhb7JdxbQoiK7D
+      MwymkxGHrETTNcK04M2rU7aHLdPxKSgQxxnTgYvp2ti6Tt1peLbD6aszTqYj5rMJp0dzNN3k
+      sH9Gmh6yzvCsikKd0hw21IaNKnNm0ymtaBkFFrHqoyWPeIs3eIZGJVXGvsthn3IcuIheougu
+      Q0/ndBog2ob54gxF1ZifzKmyGHSTIq04mo1RdRXTMonDiOnshGFgMTo+QdaCuhW//Bqg7Tu6
+      LGJftkTJjutDw3/5/Tc0ssPRGvS2pctC8t0aWSTYw2PSUiKFwJtekuclz1GM6zg0ioLvqPzm
+      299wOfHYpA27KATKFw67roi3ewohWYYl7uyEojUYjw22YYg3HFIDd3d76vCAP17gWD2Ez6hd
+      ztMuR9MVZF0yCkzef/yE4Q1Q65wuT2gbSeBqdLKjitdEeYHYPrPL4WQ24fTNN/zDt1+h9C27
+      5YZgMgMczmcmbdny5otLagmG6Nk8r5jMpuSi5f6QMfZMVruQJnxm8uZbkkPIUWDz9rvfsb7+
+      gDTHCM1DZlvuDxLVDLB7E92Ex4c96DbPu4T08QOKd8T4dMb8/BWDQcDF6YKyrEnzgly09HUJ
+      7ojlZsvVzTUjr+fu8yOMp4SbazbX9/SDCVm4ppc9jqZQayauo6ArDYuRy5/unhmaDn2xxh9Y
+      HJ2c43keXaPT9D2VlGTlgU/v33G3Cvnhp1tWu5Dt6gnHHeK6HrbuUKWS0/kETTOZOiae5VJn
+      EaZpoeoui8BGdYcYxZ6urTAtB2kEfPP1BVYwwFA1FiMLWuhrgdmWHFZP6GrD/acrVCBwTE7O
+      zgiGPvOpj2UM8IcTVps7em+B1glUkWBo2i8/AkhRkpYCs8k5RAXz83PiKMGjJy4EfS9YfPE1
+      tmWQZwnh+hpneEEnYrIkZHE8p2k7jmYz6lZhMptx/fkz2zjmeHzE7GiI0qmYXcmhtXF8i4lv
+      IISgxcRQJa43w2oLSlHQVwWea6CZGkUSsg9LhDVk4rqEu2c0a4jiDkiLljPPZr1bMpyco41H
+      KFVGmAuOJgM0zcY3oMq3PGUKv/piQdvULFdrgoGPMzom3jxhBmN6NMoiR4gaVzPJ8hCt70nz
+      hKa3+P3v3uK6A6LtM6pmUqY5ttaS1SDKjCTco5kGoqhoOsnp1CcqCkSd4nkOZ/MxYaWj6B2a
+      ajAOAvSuI60Epmfw4ccrpudz/K5jMp3hez7b9RpvOGY6HNFhMru8ZGY23O07xo6C0nf09oBj
+      zyKqJXWRss0qlKYGd4qv1hStxBsdI/KSVgVZJmQNBLZEMR0K0eHoCqqqQRExPX+Ngkpf7Alz
+      idGVbA9birhE0RTSfMdgGKBIB8W2KBQTWxZswh26Pca0LQzL5GI2wAiOCO9vKHWbxWREXOS4
+      tkmqjpiMhnQd1CJjnbQ4UmAOhuimTWMEyL6HJqbtAxzDoFcrulbFcsxfvgFUZcHVv/8z6wL8
+      2Yg0zRk4JttwwzAY0xQZVQ3R9pmTk3OCozNsy6BTNIa2yn6zx/BHNGVJ0yso5oCjqY/RZKyi
+      FFvXCbd7ZDDB71NkLRGiIykSAtuhLjJeffMr+iQm38fUmkpdqyS7O4zxJboKX7855/H2iqZX
+      0SwHvRVoikJZV5SKw4kraRpJLjX6rqbvHcyJT9HpIFTckYepKAS+jT85w/dsts/3VLKHuiSK
+      QxrFJYv2jCcBsbSYOi+AlhQ9qtZQi5Z9mlMVCbhjkjhF0uH5Y7Qux+g6dENFag6G0pBnMceu
+      xcMmQUiwugrLH+AqJc+7DMsZoGYRtm0zPjrFU6HTJE1vUaQ7FlOb0jyhrUJOT2e8f/cTmmlj
+      KB2G0tHZLjNXZ5O0nEwcDG/E3LPxBkM8XXK3rVgMLdIifznLOD7n1xcLNENnH0Uc4obJdIYs
+      EhzXJW97zi9egSjZLrfMfvsWUyQEJ19wuRhxWEfEUqGrW0SZcXy6oCgSPFOj6cBUVQzbQrV8
+      VvuE795+yfM+Rst3SHQerz+S5JIiXNM7A9oqp6nh2O+whnOkFNRCEKg5uuHz6mLB3cMnNH/O
+      5u4WQ9fxHPWXbwBFUfDp5hFXhVp0bNcrlDpDQaVoGmpRUZQNvWKhawr/991POKrgebnGcnwe
+      n1dots+bsyN2Wc5JYPP+wwdqqXA0GrDZhXS0aLIjyyuapkB1fQzV4JCUzBYLNg+PXK32tF1P
+      0XZMZ3M2+xDf0ujbnE8390xefU0eF8xnQw7hjrSqOZmf8HDzidPLS95/uGZ+PIe2p6tLtnHC
+      2LZpFBVP6elVlV610FWVPM/R6FiuN1iWhWHZpFFE27VMjuZoNMRFi64pXC5mPD7c06CzXT6B
+      5lImW+qmRbEDBkGAWiXsCpCiIClyBqMZWV6xOxwwg3NcraaoCqpG4nlDnjdbts9LetWkpeH2
+      5gZFaXl3tUY3NQbekMY0+PBvf2A4GKFoFpajc3d9jamb2JbO1c0DgWdgBTP6JiOLUvKmoygT
+      SqlzFDgc8oqxa9DbAeHqic0hRaQpTa9B0/Jw85G6aZgcndCpJr/56jWKZbC/u+Nw2FKkBXUp
+      0OwBH64/kB0yet3CM1s+3T3ztHxmOplQJiFZ3dPUDcNgyG59z+3zmokNVw9r0iTBG02RTclX
+      337HwNIpkh2l6Hl43tBWCbv05QBUKiaH/YGbpy3Rdo2hqdSyw7M10s75K2SEKQrb5RPmwEdV
+      Or54dcbj05L7VYghKpbbiOHxjKJJ2WUVpydHvP76LW3d8rTeMXAtWtkhZc96veN+l6IiWUUp
+      QtEosoimM3jerEmbnrI1+Hx3Q6VazGZDbjYrbLVF5DHRYYfZ9tw+3ZAWJTe3t1w9hQxHU7p4
+      zeGw5fp+yXqX0MmW59UK2zH58OGKVrZUZc4hCgkmPtluw/X1Nfs4JYwjWtnhey6WoTMOFD7d
+      L4n2GzbrNegqvSxRDJ0eh5HhkG3uaPKYpO35b//9fzBSS4RiUsQr1ruEVtVp8hw1vuNuW9LW
+      Bbptklcdh/WKKCoIZguoNljukKzIuft0z6eHe2TfY5g2qShRNTBtm/0ufknyEhmtrBBJzulX
+      36AYJlGSsssFr19fsN7FpN1LsmKsjjg83aH7M+K2RdSS0WjC56sPfP78kd12TdG0fL76TJmn
+      9IrO82pJF+1R9Q5vMCLKKmxL47tvX/HDj1e8+8O/kGk988mM8dGcaWDz479+zyEvGA8diiQh
+      zDsGwYC27fj0sKNRTYajEbo1wFYkZZ5TJRkfP9+yCxOO5ic8Pa6Rdcv7jzd8vr4mrMD3TNzB
+      gIsvviRLQz7eLWmpyfcJdZNwyBocvaVDIa97mmzF/wNBizt8qCA7MwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
